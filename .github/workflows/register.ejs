@@ -1,0 +1,30 @@
+<h1>Registo</h1>
+<%= error %>
+<form action="/register" method="POST">
+    
+        
+        <input type="text" id="name" name="name"
+        required placeholder="Nome">
+
+        <select name="gender">
+            <option selected disabled hidden>Género</option>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select>
+
+        <input type="text" id="adress" name="adress"
+        required placeholder="Morada">
+        
+        <input type="email" id="email" name="email"
+        required placeholder="E-mail">
+
+        <input type="date" name="birth_date" placeholder="Data de Nascimento">
+
+        <input type="number" name="number" placeholder="Número de telemóvel">
+
+        <input type="password" id="password" name="password"
+        required placeholder="Palavra passe">
+    
+    <button type="submit">Registo</button>
+</form>
+<a href="/login">Iniciar Sessão</a>
